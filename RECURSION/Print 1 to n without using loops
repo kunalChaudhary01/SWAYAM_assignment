@@ -1,0 +1,12 @@
+class Solution {
+    static void printTillN(int N) {
+        printNumbers(1,N);
+    }
+    public static void printNumbers(int current, int n) {
+        if (current > n) {
+            return;
+        }
+        System.out.print(current+" ");
+        printNumbers(current + 1, n);
+    }
+}
