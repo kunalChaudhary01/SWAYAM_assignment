@@ -1,0 +1,12 @@
+class Solution {
+    String removeDuplicates(String s) {
+        Set<Character> str = new HashSet<>();
+        StringBuilder ans = new StringBuilder();
+        for(char ch : s.toCharArray()){
+            if (str.add(ch)) { 
+                ans.append(ch);
+            }
+        }
+        return ans.toString();
+    }
+}
