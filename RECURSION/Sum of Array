@@ -1,0 +1,11 @@
+class Solution{
+    public static int sumArray(int[] arr) {
+        return recursiveSumHelper(arr, 0);
+    }
+    public int recursiveSumHelper(int[] arr, int index) {
+        if (index == arr.length) {
+            return 0;
+        }
+        return arr[index] + recursiveSumHelper(arr, index + 1);
+    }
+}
